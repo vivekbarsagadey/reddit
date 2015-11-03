@@ -213,7 +213,7 @@ fi
 
 function clone_reddit_repo {
     local destination=$REDDIT_HOME/src/${1}
-    local repository_url=https://github.com/${2}.git
+    local repository_url=https://github.com/vivekbarsagadey/reddit.git
 
     if [ ! -d $destination ]; then
         sudo -u $REDDIT_USER git clone $repository_url $destination
